@@ -1,0 +1,17 @@
+
+[build-system]
+requires = ["setuptools >= 61.0", "requests"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "geoopen-reader"
+version = "0.1"
+dependencies = [
+    "maxminddb"
+]
+
+[tool.setuptools.packages.find]
+where = ["geoopen_reader"]
+
+[tool.setuptools.package-data]
+db = ["country.json"]
