@@ -6,8 +6,12 @@ Please refer to [Alexandre's README](https://github.com/adulau/mmdb-server) for 
 
 ## Installation
 
+The package can simply be installed via pip:
+
 - `pip3 install .`
-- `cd ./db; bash update.sh; cd ..` (to get the latest version of the GeoOpen database)
+
+Note: The [GeoOpen databases](https://cra.circl.lu/opendata/geo-open/) are pulled during setup and will not be updated after that.
+To get up-to-date database files, the package would have to be re-installed.
 
 ## Usage
 
