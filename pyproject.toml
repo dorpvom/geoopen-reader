@@ -10,8 +10,8 @@ dependencies = [
     "maxminddb"
 ]
 
-[tool.setuptools.packages.find]
-where = ["geoopen_reader"]
+[tool.setuptools]
+packages = ["geoopen_reader", "geoopen_reader.db"]
 
 [tool.setuptools.package-data]
-db = ["country.json"]
+"geoopen_reader.db" = ["country.json", "GeoOpen-Country.mmdb", "GeoOpen-Country-ASN.mmdb"]
